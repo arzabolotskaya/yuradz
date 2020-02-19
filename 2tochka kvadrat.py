@@ -5,4 +5,7 @@ print("Входные данные: ")
 a = float(input())
 b = float(input())
 
-print(IsPointInSquare(a, b))
+if IsPointInSquare == True:
+    print("YES")
+else:
+    print("NO)

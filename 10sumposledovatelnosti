@@ -1,0 +1,11 @@
+def getSum(nums):
+    return nums[0] + getSum(nums[1:]) if nums else 0
+  
+
+getlist = []
+while True: 
+    a = int(input())
+    getlist.append(a)
+    if a == 0:
+        break
+print(getSum(getlist))

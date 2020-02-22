@@ -1,0 +1,18 @@
+def  ReduceFraction(n, m):
+    if m == 0:
+        print("invalid fraction")
+    else:
+        common_factor = 1
+        for i in range(min(n, m), 1, -1):
+            if n % i == 0 and m % i == 0:
+                common_factor = i
+                break
+        p = n / common_factor
+        q = m / common_factor
+        return p, q
+  
+
+print("Входные данные: ")
+n = int(input())
+m = int(input())
+print(ReduceFraction(n, m))
